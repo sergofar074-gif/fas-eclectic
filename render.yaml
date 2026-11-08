@@ -1,0 +1,17 @@
+# Blueprint для Render (https://render.com/docs/blueprint-spec)
+# ВАЖНО: бесплатный план Render даёт 512 МБ RAM — для аудио-DSP этого мало.
+# Нужен план starter (2 ГБ) или хостинг с большей памятью (HF Spaces — бесплатно 16 ГБ).
+services:
+  - type: web
+    name: fas-eclectic
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter
+    region: frankfurt
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: FAS_SEPARATOR
+        value: auto
+      - key: FAS_MAX_MB
+        value: "100"

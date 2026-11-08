@@ -1,0 +1,17 @@
+{
+  "name": "FAS Eclectic Audio Enhancer",
+  "short_name": "FAS Eclectic",
+  "description": "Мастеринг трека до стриминговых стандартов: -11 LUFS, -1.0 dBTP, 24-bit 44.1 kHz",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0B0D14",
+  "theme_color": "#0B0D14",
+  "lang": "ru",
+  "icons": [
+    { "src": "/static/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/static/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/static/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
